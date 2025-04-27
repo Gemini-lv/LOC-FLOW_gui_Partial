@@ -36,3 +36,26 @@ Based on these considerations, I plan to adjust the future development approach:
 Therefore, the code uploaded here is the **GUI version that was started but not completed**. Although unfinished, it captures the implementation ideas and code snippets from that development phase. The main purpose of uploading it is to **preserve this development process** and serve as a **reference for future projects**, allowing for potential code reuse.
 
 ---
+文件
+main_window.py
+: 主窗口，包含多个标签页，用于不同功能的GUI。
+
+catalog_download.py
+: 用于下载地震目录，并通过多线程避免阻塞主线程。
+
+config_gui.py
+: 配置页面，允许用户设置LOC-Flow路径和工作路径。
+
+config.ini
+: 存储配置文件，包括LOC-Flow路径和工作路径。
+
+phasenet_pick_gui.py
+: PhaseNet检测页面，用于生成picks.csv文件并分离P和S波。
+
+waveform_download_mseed_gui.py
+: 用于下载地震波形数据并生成PhaseNet输入文件。 这个文件用到了pyqtfluentwidget,所以看起来会不一样
+
+README.MD
+: 介绍项目的初衷、问题和后续规划。
+
+
